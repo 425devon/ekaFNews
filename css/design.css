@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Caveat";
+    src: url('fonts/caveat.ttf') format('truetype');
+    }
+@font-face {
+    font-family: "Chonburi";
+    src: url('fonts/chonburi.ttf') format('truetype');
+    }
+@font-face {
+    font-family: "Itim";
+    src: url('fonts/itim.ttf') format('truetype');
+}
+@font-face {
+    font-family: "contrailone";
+    src: url('/fonts/contrailone.ttf') format('truetype');
+}
+@font-face {
+    font-family: "newscycle";
+    src: url('/fonts/newscycle.ttf') format('truetype');
+}
+
+@media not print {
+    body{
+        /*background-color: #fbf8e5;*/
+        color: #635959;
+        font-family: 'news_cycle', Verdana, sans-serif;
+    }
+    header {
+        background-color: #242323;
+        color: #EFEFEF;
+        padding: 10px 20px;
+        font-family: 'contrail_one';
+    }
+    article > h4{
+        color: #8C1018;
+    }
+    article a{
+        color: #314052;
+    }
+}
+@media print {    
+    header {
+        padding: 0px;
+    }
+    article {
+        box-shadow: none;
+    }
+    header h1 {        
+        font-size: 2em;
+    }
+    header h2 {
+        display: none;
+    }
+}
+main fig > figcaption{
+    font-size: 0.75em;
+    font-style: italic;
+}
+main figure > figcaption::before {
+    content: 'Pictured above: ';
+    font-weight: bold;
+}
+header h1 {
+    letter-spacing: 5px;
+    font-size: 4em;
+}
+article{
+    margin: 5px 0px;
+    padding: 5px 5px;
+    box-shadow: -1px -1px 6px #888888;
+}
+article > h2 {
+    font-weight: bolder;
+}
+
+article > time{
+    float: right;
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+header{
+    padding: 20px 50px;
+}
+header > h1::before {
+    content: "\002329";
+    color: #F9C989;
+}
+header > h1::after {
+    content: "\00232A";
+    color: #F9C989;
+}
+main{
+    padding: 5px 10px;
+}
+footer {
+    background-color: #A5B7C5;
+    padding: 5px 10px;
+}
